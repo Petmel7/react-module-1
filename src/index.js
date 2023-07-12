@@ -5,13 +5,13 @@ import App from './App';
 
 //! Старий код рякт
 const myBtn = React.createElement('button', { type: 'button' }, 'Load more')
-console.log(myBtn)
+// console.log(myBtn)
 
 //! Новий код рякт
 // Підстановка значень
 let value = 'Load more'
 const newBtn = <button type="button">{value}</button>
-console.log(newBtn)
+// console.log(newBtn)
 
 const teamItem = (
   <>
@@ -19,7 +19,7 @@ const teamItem = (
     <h3>heading</h3>
   </>
 )
-console.log(teamItem)
+// console.log(teamItem)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

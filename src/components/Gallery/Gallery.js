@@ -1,14 +1,24 @@
-export function Gallery() {
-    return
-    <section>
-        <h2>Gallery</h2>
-        <p>
-            Meet my family. There are five of us – my parents, my elder brother, my baby sister and me.
-            First, meet my mum and dad, Jane and Michael. My mum enjoys reading and my dad enjoys playing
-            chess with my brother Ken. My mum slim and is rather tall.
-        </p>
-        <ul>
-            <li>1</li>
-        </ul>
-    </section>
+import PropTypes from 'prop-types';
+
+export function Gallery({ d, i, children }) {
+    
+    console.log(children)
+    return (
+        <section>
+            {children}
+            <p>{d}</p>
+            <ul>
+                <li>1</li>
+            </ul>
+        </section>
+    );
+}
+Gallery.defaultProps = {
+    d: 'Default text for description',
+}
+
+Gallery.PropTypes = {
+    d: '',
+    i: '',
+    children: '',
 }
