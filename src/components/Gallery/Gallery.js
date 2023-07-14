@@ -1,17 +1,16 @@
 import PropTypes from 'prop-types';
+import { GalleryItem } from '../GalleryItem/GalleryItem.js';
 
 export function Gallery({ d, i: arrayImages, children }) {
     
-    console.log(children)
     return (
         <section>
             {children}
             <p>{d}</p>
             <ul>
-                {arrayImages.map((imageObj) => {
-                    console.log(imageObj)
-                    return <li key={imageObj.id}>1</li>
-                })}
+                {arrayImages.map(({ id, source }) => 
+                    <GalleryItem id={id} source={source} />
+                )}
             </ul>
         </section>
     );
