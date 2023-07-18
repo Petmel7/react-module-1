@@ -8,6 +8,8 @@
   background-color: blue;
 }
 
+/* Глобальна стилізація */
+
 :global(.titleWrapper) {
   border: 2px solid red;
 }

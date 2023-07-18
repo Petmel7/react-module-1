@@ -1,5 +1,8 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Button from "react-bootstrap/Button";
 import { Gallery } from "./components/Gallery/Gallery";
+import { Hero } from "./components/hero/hero";
 import Title from "./components/title/title";
 
 const galleryImages = {
@@ -30,6 +33,14 @@ function App() {
         {/* Тернарник на Рякт */}
         {title === "images" ? <h3>Показати це</h3> : <h3>Показати друге</h3>}
         <p>Jast Text</p>
+        <div>
+          <h2 className="titleWrapper">Lesson 2</h2>
+          <Hero />
+          {/* Кнопка з бібліотеки bootstrap */}
+          <Button id="bsBtn" variant="outline-info">
+            Info
+          </Button>{" "}
+        </div>
       </Gallery>
     </div>
   );
